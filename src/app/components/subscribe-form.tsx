@@ -37,7 +37,10 @@ export function SubscribeForm({
       const res = await fetch(action, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({ email: trimmed }),
+        body: JSON.stringify({
+          email: trimmed,
+          _subject: "Portfolio updates — new subscriber",
+        }),
       });
       if (!res.ok) throw new Error("subscribe failed");
       setEmail("");

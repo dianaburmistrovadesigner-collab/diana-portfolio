@@ -52,7 +52,7 @@ const entries: Record<SiteLocale, UpdateEntry[]> = {
   en: [
     {
       id: "portfolio-v1",
-      date: "2026-05-19",
+      date: "2026-06-11",
       kind: "site",
       title: "Portfolio site v1 — published",
       description:
@@ -62,7 +62,7 @@ const entries: Record<SiteLocale, UpdateEntry[]> = {
   ru: [
     {
       id: "portfolio-v1",
-      date: "2026-05-19",
+      date: "2026-06-11",
       kind: "site",
       title: "Опубликована первая версия сайта-портфолио",
       description:
