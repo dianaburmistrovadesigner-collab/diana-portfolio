@@ -1,0 +1,898 @@
+{
+  "effectStyles": [
+    {
+      "name": "backdrop-blur/2xl",
+      "token": "2xl",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "background-blur",
+          "blur": "40"
+        }
+      ]
+    },
+    {
+      "name": "backdrop-blur/3xl",
+      "token": "3xl",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "background-blur",
+          "blur": "64"
+        }
+      ]
+    },
+    {
+      "name": "backdrop-blur/lg",
+      "token": "lg",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "background-blur",
+          "blur": "16"
+        }
+      ]
+    },
+    {
+      "name": "backdrop-blur/md",
+      "token": "md",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "background-blur",
+          "blur": "12"
+        }
+      ]
+    },
+    {
+      "name": "backdrop-blur/none",
+      "token": "none",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "background-blur",
+          "blur": "0"
+        }
+      ]
+    },
+    {
+      "name": "backdrop-blur/sm",
+      "token": "sm",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "background-blur",
+          "blur": "8"
+        }
+      ]
+    },
+    {
+      "name": "backdrop-blur/xl",
+      "token": "xl",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "background-blur",
+          "blur": "24"
+        }
+      ]
+    },
+    {
+      "name": "backdrop-blur/xs",
+      "token": "xs",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "background-blur",
+          "blur": "4"
+        }
+      ]
+    },
+    {
+      "name": "blur/2xl",
+      "token": "2xl",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "layer-blur",
+          "blur": "40"
+        }
+      ]
+    },
+    {
+      "name": "blur/3xl",
+      "token": "3xl",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "layer-blur",
+          "blur": "64"
+        }
+      ]
+    },
+    {
+      "name": "blur/lg",
+      "token": "lg",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "layer-blur",
+          "blur": "16"
+        }
+      ]
+    },
+    {
+      "name": "blur/md",
+      "token": "md",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "layer-blur",
+          "blur": "12"
+        }
+      ]
+    },
+    {
+      "name": "blur/none",
+      "token": "none",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "layer-blur",
+          "blur": "0"
+        }
+      ]
+    },
+    {
+      "name": "blur/sm",
+      "token": "sm",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "layer-blur",
+          "blur": "8"
+        }
+      ]
+    },
+    {
+      "name": "blur/xl",
+      "token": "xl",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "layer-blur",
+          "blur": "24"
+        }
+      ]
+    },
+    {
+      "name": "blur/xs",
+      "token": "xs",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "layer-blur",
+          "blur": "4"
+        }
+      ]
+    },
+    {
+      "name": "drop-shadow/drop-shadow-2xl",
+      "token": "drop-shadow-2xl",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/drop-shadow/2xl/drop-shadow-2xl-offset-x",
+          "y": "02_01_Theme/drop-shadow/2xl/drop-shadow-2xl-offset-y",
+          "blur": "02_01_Theme/drop-shadow/2xl/drop-shadow-2xl-blur",
+          "color": "02_01_Theme/drop-shadow/2xl/drop-shadow-2xl-color"
+        }
+      ]
+    },
+    {
+      "name": "drop-shadow/drop-shadow-2xs",
+      "token": "drop-shadow-2xs",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/drop-shadow/xs/drop-shadow-xs-offset-x",
+          "y": "02_01_Theme/drop-shadow/xs/drop-shadow-xs-offset-y",
+          "blur": "02_01_Theme/drop-shadow/xs/drop-shadow-xs-blur",
+          "color": "02_01_Theme/drop-shadow/xs/drop-shadow-xs-color"
+        }
+      ]
+    },
+    {
+      "name": "drop-shadow/drop-shadow-lg",
+      "token": "drop-shadow-lg",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/drop-shadow/lg/drop-shadow-lg-offset-x",
+          "y": "02_01_Theme/drop-shadow/lg/drop-shadow-lg-offset-y",
+          "blur": "02_01_Theme/drop-shadow/lg/drop-shadow-lg-blur",
+          "color": "02_01_Theme/drop-shadow/lg/drop-shadow-lg-color"
+        }
+      ]
+    },
+    {
+      "name": "drop-shadow/drop-shadow-md",
+      "token": "drop-shadow-md",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/drop-shadow/md/drop-shadow-md-offset-x",
+          "y": "02_01_Theme/drop-shadow/md/drop-shadow-md-offset-y",
+          "blur": "02_01_Theme/drop-shadow/md/drop-shadow-md-blur",
+          "color": "02_01_Theme/drop-shadow/md/drop-shadow-md-color"
+        }
+      ]
+    },
+    {
+      "name": "drop-shadow/drop-shadow-sm",
+      "token": "drop-shadow-sm",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/drop-shadow/sm/drop-shadow-sm-offset-x",
+          "y": "02_01_Theme/drop-shadow/sm/drop-shadow-sm-offset-y",
+          "blur": "02_01_Theme/drop-shadow/sm/drop-shadow-sm-blur",
+          "color": "02_01_Theme/drop-shadow/sm/drop-shadow-sm-color"
+        }
+      ]
+    },
+    {
+      "name": "drop-shadow/drop-shadow-xl",
+      "token": "drop-shadow-xl",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/drop-shadow/xl/drop-shadow-xl-offset-x",
+          "y": "02_01_Theme/drop-shadow/xl/drop-shadow-xl-offset-y",
+          "blur": "02_01_Theme/drop-shadow/xl/drop-shadow-xl-blur",
+          "color": "02_01_Theme/drop-shadow/xl/drop-shadow-xl-color"
+        }
+      ]
+    },
+    {
+      "name": "drop-shadow/drop-shadow-xs",
+      "token": "drop-shadow-xs",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/drop-shadow/xs/drop-shadow-xs-offset-x",
+          "y": "02_01_Theme/drop-shadow/xs/drop-shadow-xs-offset-y",
+          "blur": "02_01_Theme/drop-shadow/xs/drop-shadow-xs-blur",
+          "color": "02_01_Theme/drop-shadow/xs/drop-shadow-xs-color"
+        }
+      ]
+    },
+    {
+      "name": "focus-effects/focus ring critical outline",
+      "token": "focus ring critical outline",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "01_Primitives/border-width/border-width-3px",
+          "color": "02_01_Theme/focus-ring/focus-ring-color-bg-critical"
+        }
+      ]
+    },
+    {
+      "name": "focus-effects/focus ring outline",
+      "token": "focus ring outline",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "01_Primitives/border-width/border-width-3px",
+          "color": "02_01_Theme/focus-ring/focus-ring-color-bg"
+        }
+      ]
+    },
+    {
+      "name": "focus-effects/focus ring outline small",
+      "token": "focus ring outline small",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "01_Primitives/border-width/border-width-1px",
+          "color": "02_01_Theme/focus-ring/focus-ring-color-bg"
+        }
+      ]
+    },
+    {
+      "name": "focus-effects/focus ring sidebar outline",
+      "token": "focus ring sidebar outline",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "01_Primitives/border-width/border-width-3px",
+          "color": "02_01_Theme/focus-ring/focus-ring-color-bg-subtle-on-sidebar-bg"
+        }
+      ]
+    },
+    {
+      "name": "focus-effects/focus ring success outline",
+      "token": "focus ring success outline",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "01_Primitives/border-width/border-width-3px",
+          "color": "02_01_Theme/focus-ring/focus-ring-color-bg-success"
+        }
+      ]
+    },
+    {
+      "name": "focus-effects/focus ring warning outline",
+      "token": "focus ring warning outline",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "01_Primitives/border-width/border-width-3px",
+          "color": "02_01_Theme/focus-ring/focus-ring-color-bg-warning"
+        }
+      ]
+    },
+    {
+      "name": "inset-shadow/inset-shadow-2xs",
+      "token": "inset-shadow-2xs",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "inner-shadow",
+          "x": "02_01_Theme/inset-shadow/2xs/inset-shadow-2xs-offset-x",
+          "y": "02_01_Theme/inset-shadow/2xs/inset-shadow-2xs-offset-y",
+          "blur": "02_01_Theme/inset-shadow/2xs/inset-shadow-2xs-blur",
+          "spread": "02_01_Theme/inset-shadow/2xs/inset-shadow-2xs-spread",
+          "color": "02_01_Theme/inset-shadow/2xs/inset-shadow-2xs-color"
+        }
+      ]
+    },
+    {
+      "name": "inset-shadow/inset-shadow-sm",
+      "token": "inset-shadow-sm",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "inner-shadow",
+          "x": "02_01_Theme/inset-shadow/sm/inset-shadow-sm-offset-x",
+          "y": "02_01_Theme/inset-shadow/sm/inset-shadow-sm-offset-y",
+          "blur": "02_01_Theme/inset-shadow/sm/inset-shadow-sm-blur",
+          "spread": "02_01_Theme/inset-shadow/sm/inset-shadow-sm-spread",
+          "color": "02_01_Theme/inset-shadow/sm/inset-shadow-sm-color"
+        }
+      ]
+    },
+    {
+      "name": "inset-shadow/inset-shadow-xs",
+      "token": "inset-shadow-xs",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "inner-shadow",
+          "x": "02_01_Theme/inset-shadow/xs/inset-shadow-xs-offset-x",
+          "y": "02_01_Theme/inset-shadow/xs/inset-shadow-xs-offset-y",
+          "blur": "02_01_Theme/inset-shadow/xs/inset-shadow-xs-blur",
+          "spread": "02_01_Theme/inset-shadow/xs/inset-shadow-xs-spread",
+          "color": "02_01_Theme/inset-shadow/xs/inset-shadow-xs-color"
+        }
+      ]
+    },
+    {
+      "name": "shadow-for-elevation/shadow-2xl",
+      "token": "shadow-2xl",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/shadow-for-elevation/2xl/shadow-2xl-offset-x",
+          "y": "02_01_Theme/shadow-for-elevation/2xl/shadow-2xl-offset-y",
+          "blur": "02_01_Theme/shadow-for-elevation/2xl/shadow-2xl-blur",
+          "spread": "02_01_Theme/shadow-for-elevation/2xl/shadow-2xl-spread",
+          "color": "02_01_Theme/shadow-for-elevation/2xl/shadow-2xl-color"
+        }
+      ]
+    },
+    {
+      "name": "shadow-for-elevation/shadow-2xs",
+      "token": "shadow-2xs",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/shadow-for-elevation/2xs/shadow-2xs-offset-x",
+          "y": "02_01_Theme/shadow-for-elevation/2xs/shadow-2xs-offset-y",
+          "blur": "02_01_Theme/shadow-for-elevation/2xs/shadow-2xs-blur",
+          "spread": "02_01_Theme/shadow-for-elevation/2xs/shadow-2xs-spread",
+          "color": "02_01_Theme/shadow-for-elevation/2xs/shadow-2xs-color"
+        }
+      ]
+    },
+    {
+      "name": "shadow-for-elevation/shadow-lg",
+      "token": "shadow-lg",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/shadow-for-elevation/lg-1/shadow-lg-level-1-offset-x",
+          "y": "02_01_Theme/shadow-for-elevation/lg-1/shadow-lg-level-1-offset-y",
+          "blur": "02_01_Theme/shadow-for-elevation/lg-1/shadow-lg-level-1-blur",
+          "spread": "02_01_Theme/shadow-for-elevation/lg-1/shadow-lg-level-1-spread",
+          "color": "02_01_Theme/shadow-for-elevation/lg-1/shadow-lg-level-1-color"
+        },
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/shadow-for-elevation/lg-2/shadow-lg-level-2-offset-x",
+          "y": "02_01_Theme/shadow-for-elevation/lg-2/shadow-lg-level-2-offset-y",
+          "blur": "02_01_Theme/shadow-for-elevation/lg-2/shadow-lg-level-2-blur",
+          "spread": "02_01_Theme/shadow-for-elevation/lg-2/shadow-lg-level-2-spread",
+          "color": "02_01_Theme/shadow-for-elevation/lg-2/shadow-lg-level-2-color"
+        }
+      ]
+    },
+    {
+      "name": "shadow-for-elevation/shadow-md",
+      "token": "shadow-md",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/shadow-for-elevation/md-1/shadow-md-level-1-offset-x",
+          "y": "02_01_Theme/shadow-for-elevation/md-1/shadow-md-level-1-offset-y",
+          "blur": "02_01_Theme/shadow-for-elevation/md-1/shadow-md-level-1-blur",
+          "spread": "02_01_Theme/shadow-for-elevation/md-1/shadow-md-level-1-spread",
+          "color": "02_01_Theme/shadow-for-elevation/md-1/shadow-md-level-1-color"
+        },
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/shadow-for-elevation/md-2/shadow-md-level-2-offset-x",
+          "y": "02_01_Theme/shadow-for-elevation/md-2/shadow-md-level-2-offset-y",
+          "blur": "02_01_Theme/shadow-for-elevation/md-2/shadow-md-level-2-blur",
+          "spread": "02_01_Theme/shadow-for-elevation/md-2/shadow-md-level-2-spread",
+          "color": "02_01_Theme/shadow-for-elevation/md-2/shadow-md-level-2-color"
+        }
+      ]
+    },
+    {
+      "name": "shadow-for-elevation/shadow-sm",
+      "token": "shadow-sm",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/shadow-for-elevation/sm-1/shadow-sm-level-1-offset-x",
+          "y": "02_01_Theme/shadow-for-elevation/sm-1/shadow-sm-level-1-offset-y",
+          "blur": "02_01_Theme/shadow-for-elevation/sm-1/shadow-sm-level-1-blur",
+          "spread": "02_01_Theme/shadow-for-elevation/sm-1/shadow-sm-level-1-spread",
+          "color": "02_01_Theme/shadow-for-elevation/sm-1/shadow-sm-level-1-color"
+        },
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/shadow-for-elevation/sm-2/shadow-sm-level-2-offset-x",
+          "y": "02_01_Theme/shadow-for-elevation/sm-2/shadow-sm-level-2-offset-y",
+          "blur": "02_01_Theme/shadow-for-elevation/sm-2/shadow-sm-level-2-blur",
+          "spread": "02_01_Theme/shadow-for-elevation/sm-2/shadow-sm-level-2-spread",
+          "color": "02_01_Theme/shadow-for-elevation/sm-2/shadow-sm-level-2-color"
+        }
+      ]
+    },
+    {
+      "name": "shadow-for-elevation/shadow-xl",
+      "token": "shadow-xl",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/shadow-for-elevation/xl-1/shadow-xl-level-1-offset-x",
+          "y": "02_01_Theme/shadow-for-elevation/xl-1/shadow-xl-level-1-offset-y",
+          "blur": "02_01_Theme/shadow-for-elevation/xl-1/shadow-xl-level-1-blur",
+          "spread": "02_01_Theme/shadow-for-elevation/xl-1/shadow-xl-level-1-spread",
+          "color": "02_01_Theme/shadow-for-elevation/xl-1/shadow-xl-level-1-color"
+        },
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/shadow-for-elevation/xl-2/shadow-xl-level-2-offset-x",
+          "y": "02_01_Theme/shadow-for-elevation/xl-2/shadow-xl-level-2-offset-y",
+          "blur": "02_01_Theme/shadow-for-elevation/xl-2/shadow-xl-level-2-blur",
+          "spread": "02_01_Theme/shadow-for-elevation/xl-2/shadow-xl-level-2-spread",
+          "color": "02_01_Theme/shadow-for-elevation/xl-2/shadow-xl-level-2-color"
+        }
+      ]
+    },
+    {
+      "name": "shadow-for-elevation/shadow-xs",
+      "token": "shadow-xs",
+      "type": "effect",
+      "description": "",
+      "effects": [
+        {
+          "type": "drop-shadow",
+          "x": "02_01_Theme/shadow-for-elevation/xs/shadow-xs-offset-x",
+          "y": "02_01_Theme/shadow-for-elevation/xs/shadow-xs-offset-y",
+          "blur": "02_01_Theme/shadow-for-elevation/xs/shadow-xs-blur",
+          "spread": "02_01_Theme/shadow-for-elevation/xs/shadow-xs-spread",
+          "color": "02_01_Theme/shadow-for-elevation/xs/shadow-xs-color"
+        }
+      ]
+    }
+  ],
+  "textStyles": [
+    {
+      "name": "body-lg",
+      "token": "body-lg",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/body/lg/typography-body-lg-font-family",
+      "fontWeight": "02_02_Responsive/typography/body/lg/typography-body-lg-font-weight",
+      "fontSize": "02_02_Responsive/typography/body/lg/typography-body-lg-font-size",
+      "lineHeight": "02_02_Responsive/typography/body/lg/typography-body-lg-line-height",
+      "letterSpacing": "02_02_Responsive/typography/body/lg/typography-body-lg-letter-spacing"
+    },
+    {
+      "name": "body-md",
+      "token": "body-md",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/body/md/typography-body-md-font-family",
+      "fontWeight": "02_02_Responsive/typography/body/md/typography-body-md-font-weight",
+      "fontSize": "02_02_Responsive/typography/body/md/typography-body-md-font-size",
+      "lineHeight": "02_02_Responsive/typography/body/md/typography-body-md-line-height",
+      "letterSpacing": "02_02_Responsive/typography/body/md/typography-body-md-letter-spacing"
+    },
+    {
+      "name": "body-sm-caption",
+      "token": "body-sm-caption",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/body/sm-caption/typography-body-sm-caption-font-family",
+      "fontWeight": "02_02_Responsive/typography/body/sm-caption/typography-body-sm-caption-font-weight",
+      "fontSize": "02_02_Responsive/typography/body/sm-caption/typography-body-sm-caption-font-size",
+      "lineHeight": "02_02_Responsive/typography/body/sm-caption/typography-body-sm-caption-line-height",
+      "letterSpacing": "02_02_Responsive/typography/body/sm-caption/typography-body-sm-caption-letter-spacing"
+    },
+    {
+      "name": "body-sm-mono",
+      "token": "body-sm-mono",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/body/sm-mono/typography-body-sm-mono-data-font-family",
+      "fontWeight": "02_02_Responsive/typography/body/sm-mono/typography-body-sm-mono-data-font-weight",
+      "fontSize": "02_02_Responsive/typography/body/sm-mono/typography-body-sm-mono-data-font-size",
+      "lineHeight": "02_02_Responsive/typography/body/sm-mono/typography-body-sm-mono-data-line-height",
+      "letterSpacing": "02_02_Responsive/typography/body/sm-mono/typography-body-sm-mono-data-letter-spacing"
+    },
+    {
+      "name": "body-xs-caption",
+      "token": "body-xs-caption",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/body/xs-caption/typography-body-xs-caption-font-family",
+      "fontWeight": "02_02_Responsive/typography/body/xs-caption/typography-body-xs-caption-font-weight",
+      "fontSize": "02_02_Responsive/typography/body/xs-caption/typography-body-xs-caption-font-size",
+      "lineHeight": "02_02_Responsive/typography/body/xs-caption/typography-body-xs-caption-line-height",
+      "letterSpacing": "02_02_Responsive/typography/body/xs-caption/typography-body-xs-caption-letter-spacing"
+    },
+    {
+      "name": "body-xs-mono",
+      "token": "body-xs-mono",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/body/xs-mono/typography-body-xs-mono-data-font-family",
+      "fontWeight": "02_02_Responsive/typography/body/xs-mono/typography-body-xs-mono-data-font-weight",
+      "fontSize": "02_02_Responsive/typography/body/xs-mono/typography-body-xs-mono-data-font-size",
+      "lineHeight": "02_02_Responsive/typography/body/xs-mono/typography-body-xs-mono-data-line-height",
+      "letterSpacing": "02_02_Responsive/typography/body/xs-mono/typography-body-xs-mono-data-letter-spacing"
+    },
+    {
+      "name": "button-text-lg",
+      "token": "button-text-lg",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/button-text/lg/typography-button-text-lg-font-family",
+      "fontWeight": "02_02_Responsive/typography/button-text/lg/typography-button-text-lg-font-weight",
+      "fontSize": "02_02_Responsive/typography/button-text/lg/typography-button-text-lg-font-size",
+      "lineHeight": "02_02_Responsive/typography/button-text/lg/typography-button-text-lg-line-height",
+      "letterSpacing": "02_02_Responsive/typography/button-text/lg/typography-button-text-lg-letter-spacing"
+    },
+    {
+      "name": "button-text-lg-underline",
+      "token": "button-text-lg-underline",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/button-text/lg/typography-button-text-lg-font-family",
+      "fontWeight": "02_02_Responsive/typography/button-text/lg/typography-button-text-lg-font-weight",
+      "fontSize": "02_02_Responsive/typography/button-text/lg/typography-button-text-lg-font-size",
+      "lineHeight": "02_02_Responsive/typography/button-text/lg/typography-button-text-lg-line-height",
+      "letterSpacing": "02_02_Responsive/typography/button-text/lg/typography-button-text-lg-letter-spacing",
+      "textDecoration": "UNDERLINE"
+    },
+    {
+      "name": "button-text-md",
+      "token": "button-text-md",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/button-text/md/typography-button-text-md-font-family",
+      "fontWeight": "02_02_Responsive/typography/button-text/md/typography-button-text-md-font-weight",
+      "fontSize": "02_02_Responsive/typography/button-text/md/typography-button-text-md-font-size",
+      "lineHeight": "02_02_Responsive/typography/button-text/md/typography-button-text-md-line-height",
+      "letterSpacing": "02_02_Responsive/typography/button-text/md/typography-button-text-md-letter-spacing"
+    },
+    {
+      "name": "button-text-md-underline",
+      "token": "button-text-md-underline",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/button-text/md/typography-button-text-md-font-family",
+      "fontWeight": "02_02_Responsive/typography/button-text/md/typography-button-text-md-font-weight",
+      "fontSize": "02_02_Responsive/typography/button-text/md/typography-button-text-md-font-size",
+      "lineHeight": "02_02_Responsive/typography/button-text/md/typography-button-text-md-line-height",
+      "letterSpacing": "02_02_Responsive/typography/button-text/md/typography-button-text-md-letter-spacing",
+      "textDecoration": "UNDERLINE"
+    },
+    {
+      "name": "button-text-sm",
+      "token": "button-text-sm",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/button-text/sm/typography-button-text-sm-font-family",
+      "fontWeight": "02_02_Responsive/typography/button-text/sm/typography-button-text-sm-font-weight",
+      "fontSize": "02_02_Responsive/typography/button-text/sm/typography-button-text-sm-font-size",
+      "lineHeight": "02_02_Responsive/typography/button-text/sm/typography-button-text-sm-line-height",
+      "letterSpacing": "02_02_Responsive/typography/button-text/sm/typography-button-text-sm-letter-spacing"
+    },
+    {
+      "name": "button-text-sm-underline",
+      "token": "button-text-sm-underline",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/button-text/sm/typography-button-text-sm-font-family",
+      "fontWeight": "02_02_Responsive/typography/button-text/sm/typography-button-text-sm-font-weight",
+      "fontSize": "02_02_Responsive/typography/button-text/sm/typography-button-text-sm-font-size",
+      "lineHeight": "02_02_Responsive/typography/button-text/sm/typography-button-text-sm-line-height",
+      "letterSpacing": "02_02_Responsive/typography/button-text/sm/typography-button-text-sm-letter-spacing",
+      "textDecoration": "UNDERLINE"
+    },
+    {
+      "name": "code-inline",
+      "token": "code-inline",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/code-inline/typography-code-inline-font-family",
+      "fontWeight": "02_02_Responsive/typography/code-inline/typography-code-inline-font-weight",
+      "fontSize": "02_02_Responsive/typography/code-inline/typography-code-inline-font-size",
+      "lineHeight": "02_02_Responsive/typography/code-inline/typography-code-inline-line-height",
+      "letterSpacing": "02_02_Responsive/typography/code-inline/typography-code-inline-letter-spacing"
+    },
+    {
+      "name": "heading-2xl-display",
+      "token": "heading-2xl-display",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/heading/2xl-display/typography-heading-2xl-display-font-family",
+      "fontWeight": "02_02_Responsive/typography/heading/2xl-display/typography-heading-2xl-display-font-weight",
+      "fontSize": "02_02_Responsive/typography/heading/2xl-display/typography-heading-2xl-display-font-size",
+      "lineHeight": "02_02_Responsive/typography/heading/2xl-display/typography-heading-2xl-display-line-height",
+      "letterSpacing": "02_02_Responsive/typography/heading/2xl-display/typography-heading-2xl-display-letter-spacing"
+    },
+    {
+      "name": "heading-2xs-subheading",
+      "token": "heading-2xs-subheading",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/heading/2xs-subheading/typography-heading-2xs-subheading-font-family",
+      "fontWeight": "02_02_Responsive/typography/heading/2xs-subheading/typography-heading-2xs-subheading-font-weight",
+      "fontSize": "02_02_Responsive/typography/heading/2xs-subheading/typography-heading-2xs-subheading-font-size",
+      "lineHeight": "02_02_Responsive/typography/heading/2xs-subheading/typography-heading-2xs-subheading-line-height",
+      "letterSpacing": "02_02_Responsive/typography/heading/2xs-subheading/typography-heading-2xs-subheading-letter-spacing"
+    },
+    {
+      "name": "heading-lg-page-title",
+      "token": "heading-lg-page-title",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/heading/lg-page-title/typography-heading-lg-page-title-font-family",
+      "fontWeight": "02_02_Responsive/typography/heading/lg-page-title/typography-heading-lg-page-title-font-weight",
+      "fontSize": "02_02_Responsive/typography/heading/lg-page-title/typography-heading-lg-page-title-font-size",
+      "lineHeight": "02_02_Responsive/typography/heading/lg-page-title/typography-heading-lg-page-title-line-height",
+      "letterSpacing": "02_02_Responsive/typography/heading/lg-page-title/typography-heading-lg-page-title-letter-spacing"
+    },
+    {
+      "name": "heading-md-section-title",
+      "token": "heading-md-section-title",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/heading/md-section-title/typography-heading-md-section-title-font-family",
+      "fontWeight": "02_02_Responsive/typography/heading/md-section-title/typography-heading-md-section-title-font-weight",
+      "fontSize": "02_02_Responsive/typography/heading/md-section-title/typography-heading-md-section-title-font-size",
+      "lineHeight": "02_02_Responsive/typography/heading/md-section-title/typography-heading-md-section-title-line-height",
+      "letterSpacing": "02_02_Responsive/typography/heading/md-section-title/typography-heading-md-section-title-letter-spacing"
+    },
+    {
+      "name": "heading-sm-card-title",
+      "token": "heading-sm-card-title",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/heading/sm-card-title/typography-heading-sm-card-title-font-family",
+      "fontWeight": "02_02_Responsive/typography/heading/sm-card-title/typography-heading-sm-card-title-font-weight",
+      "fontSize": "02_02_Responsive/typography/heading/sm-card-title/typography-heading-sm-card-title-font-size",
+      "lineHeight": "02_02_Responsive/typography/heading/sm-card-title/typography-heading-sm-card-title-line-height",
+      "letterSpacing": "02_02_Responsive/typography/heading/sm-card-title/typography-heading-sm-card-title-letter-spacing"
+    },
+    {
+      "name": "heading-xl-display",
+      "token": "heading-xl-display",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/heading/xl-display/typography-heading-xl-display-font-family",
+      "fontWeight": "02_02_Responsive/typography/heading/xl-display/typography-heading-xl-display-font-weight",
+      "fontSize": "02_02_Responsive/typography/heading/xl-display/typography-heading-xl-display-font-size",
+      "lineHeight": "02_02_Responsive/typography/heading/xl-display/typography-heading-xl-display-line-height",
+      "letterSpacing": "02_02_Responsive/typography/heading/xl-display/typography-heading-xl-display-letter-spacing"
+    },
+    {
+      "name": "heading-xs-subheading",
+      "token": "heading-xs-subheading",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/heading/xs-subheading/typography-heading-xs-subheading-font-family",
+      "fontWeight": "02_02_Responsive/typography/heading/xs-subheading/typography-heading-xs-subheading-font-weight",
+      "fontSize": "02_02_Responsive/typography/heading/xs-subheading/typography-heading-xs-subheading-font-size",
+      "lineHeight": "02_02_Responsive/typography/heading/xs-subheading/typography-heading-xs-subheading-line-height",
+      "letterSpacing": "02_02_Responsive/typography/heading/xs-subheading/typography-heading-xs-subheading-letter-spacing"
+    },
+    {
+      "name": "label-lg",
+      "token": "label-lg",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/label/lg/typography-label-lg-font-family",
+      "fontWeight": "02_02_Responsive/typography/label/lg/typography-label-lg-font-weight",
+      "fontSize": "02_02_Responsive/typography/label/lg/typography-label-lg-font-size",
+      "lineHeight": "02_02_Responsive/typography/label/lg/typography-label-lg-line-height",
+      "letterSpacing": "02_02_Responsive/typography/label/lg/typography-label-lg-letter-spacing"
+    },
+    {
+      "name": "label-md",
+      "token": "label-md",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/label/md/typography-label-md-font-family",
+      "fontWeight": "02_02_Responsive/typography/label/md/typography-label-md-font-weight",
+      "fontSize": "02_02_Responsive/typography/label/md/typography-label-md-font-size",
+      "lineHeight": "02_02_Responsive/typography/label/md/typography-label-md-line-height",
+      "letterSpacing": "02_02_Responsive/typography/label/md/typography-label-md-letter-spacing"
+    },
+    {
+      "name": "label-sm",
+      "token": "label-sm",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/label/sm/typography-label-sm-font-family",
+      "fontWeight": "02_02_Responsive/typography/label/sm/typography-label-sm-font-weight",
+      "fontSize": "02_02_Responsive/typography/label/sm/typography-label-sm-font-size",
+      "lineHeight": "02_02_Responsive/typography/label/sm/typography-label-sm-line-height",
+      "letterSpacing": "02_02_Responsive/typography/label/sm/typography-label-sm-letter-spacing"
+    },
+    {
+      "name": "menu-link-lg",
+      "token": "menu-link-lg",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/menu-link/lg/typography-menu-link-lg-font-family",
+      "fontWeight": "02_02_Responsive/typography/menu-link/lg/typography-menu-link-lg-font-weight",
+      "fontSize": "02_02_Responsive/typography/menu-link/lg/typography-menu-link-lg-font-size",
+      "lineHeight": "02_02_Responsive/typography/menu-link/lg/typography-menu-link-lg-line-height",
+      "letterSpacing": "02_02_Responsive/typography/menu-link/lg/typography-menu-link-lg-letter-spacing"
+    },
+    {
+      "name": "menu-link-lg-underline",
+      "token": "menu-link-lg-underline",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/menu-link/lg-underline/typography-menu-link-lg-underline-font-family",
+      "fontWeight": "02_02_Responsive/typography/menu-link/lg-underline/typography-menu-link-lg-underline-font-weight",
+      "fontSize": "02_02_Responsive/typography/menu-link/lg/typography-menu-link-lg-font-size",
+      "lineHeight": "02_02_Responsive/typography/menu-link/lg/typography-menu-link-lg-line-height",
+      "letterSpacing": "02_02_Responsive/typography/menu-link/lg/typography-menu-link-lg-letter-spacing",
+      "textDecoration": "UNDERLINE"
+    },
+    {
+      "name": "menu-link-md",
+      "token": "menu-link-md",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/menu-link/md/typography-menu-link-md-font-family",
+      "fontWeight": "02_02_Responsive/typography/menu-link/md/typography-menu-link-md-font-weight",
+      "fontSize": "02_02_Responsive/typography/menu-link/md/typography-menu-link-md-font-size",
+      "lineHeight": "02_02_Responsive/typography/menu-link/md/typography-menu-link-md-line-height",
+      "letterSpacing": "02_02_Responsive/typography/menu-link/md/typography-menu-link-md-letter-spacing"
+    },
+    {
+      "name": "menu-link-md-underline",
+      "token": "menu-link-md-underline",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/menu-link/md/typography-menu-link-md-font-family",
+      "fontWeight": "02_02_Responsive/typography/menu-link/md/typography-menu-link-md-font-weight",
+      "fontSize": "02_02_Responsive/typography/menu-link/md/typography-menu-link-md-font-size",
+      "lineHeight": "02_02_Responsive/typography/menu-link/md/typography-menu-link-md-line-height",
+      "letterSpacing": "02_02_Responsive/typography/menu-link/md/typography-menu-link-md-letter-spacing",
+      "textDecoration": "UNDERLINE"
+    },
+    {
+      "name": "menu-link-sm",
+      "token": "menu-link-sm",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/menu-link/sm/typography-menu-link-sm-font-family",
+      "fontWeight": "02_02_Responsive/typography/menu-link/sm/typography-menu-link-sm-font-weight",
+      "fontSize": "02_02_Responsive/typography/menu-link/sm/typography-menu-link-sm-font-size",
+      "lineHeight": "02_02_Responsive/typography/menu-link/sm/typography-menu-link-sm-line-height",
+      "letterSpacing": "02_02_Responsive/typography/menu-link/sm/typography-menu-link-sm-letter-spacing"
+    },
+    {
+      "name": "menu-link-sm-underline",
+      "token": "menu-link-sm-underline",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/menu-link/sm/typography-menu-link-sm-font-family",
+      "fontWeight": "02_02_Responsive/typography/menu-link/sm/typography-menu-link-sm-font-weight",
+      "fontSize": "02_02_Responsive/typography/menu-link/sm/typography-menu-link-sm-font-size",
+      "lineHeight": "02_02_Responsive/typography/menu-link/sm/typography-menu-link-sm-line-height",
+      "letterSpacing": "02_02_Responsive/typography/menu-link/sm-underline/typography-menu-link-sm-underline-letter-spacing",
+      "textDecoration": "UNDERLINE"
+    },
+    {
+      "name": "overline",
+      "token": "overline",
+      "type": "text",
+      "fontFamily": "02_02_Responsive/typography/overline/typography-overline-font-family",
+      "fontWeight": "02_02_Responsive/typography/overline/typography-overline-font-weight",
+      "fontSize": "02_02_Responsive/typography/overline/typography-overline-font-size",
+      "lineHeight": "02_02_Responsive/typography/overline/typography-overline-line-height",
+      "letterSpacing": "02_02_Responsive/typography/overline/typography-overline-letter-spacing",
+      "textCase": "UPPER"
+    }
+  ]
+}
