@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { siteConfig } from "../lib/site-config";
 
 type SubscribeFormProps = {
@@ -11,6 +11,43 @@ type SubscribeFormProps = {
 
 type FormState = "idle" | "loading" | "success" | "error" | "pending";
 
+function TallyEmbed({ formId }: { formId: string }) {
+  useEffect(() => {
+    const loadEmbeds = () => {
+      const tally = (window as Window & { Tally?: { loadEmbeds: () => void } }).Tally;
+      tally?.loadEmbeds();
+    };
+
+    const existing = document.querySelector('script[src="https://tally.so/widgets/embed.js"]');
+    if (existing) {
+      loadEmbeds();
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.src = "https://tally.so/widgets/embed.js";
+    script.async = true;
+    script.onload = loadEmbeds;
+    document.body.appendChild(script);
+  }, [formId]);
+
+  const src = `https://tally.so/embed/${formId}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1`;
+
+  return (
+    <iframe
+      data-tally-src={src}
+      loading="lazy"
+      width="100%"
+      height="120"
+      frameBorder={0}
+      marginHeight={0}
+      marginWidth={0}
+      title="Newsletter signup"
+      className="rounded-2xl"
+    />
+  );
+}
+
 export function SubscribeForm({
   placeholder,
   buttonLabel,
@@ -20,7 +57,12 @@ export function SubscribeForm({
 }: SubscribeFormProps) {
   const [email, setEmail] = useState("");
   const [state, setState] = useState<FormState>("idle");
+  const tallyFormId = siteConfig.tallyFormId;
   const action = siteConfig.newsletterFormAction;
+
+  if (tallyFormId) {
+    return <TallyEmbed formId={tallyFormId} />;
+  }
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();

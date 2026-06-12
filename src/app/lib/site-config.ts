@@ -14,7 +14,9 @@ export const siteConfig = {
   mediumRu:
     "https://medium.com/%D0%B1%D1%8B%D1%82%D1%8Cuxui%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80%D0%BE%D0%BC",
   mediumEn: "https://medium.com/beingauxuidesigner",
-  /** Formspree / ConvertKit endpoint — set when ready */
+  /** Tally form id — from tally.so/r/xxxxxxxx (preferred for newsletter) */
+  tallyFormId: (import.meta.env.VITE_TALLY_FORM_ID as string | undefined) ?? "",
+  /** Formspree fallback — https://formspree.io/f/xxxxxxxx */
   newsletterFormAction: (import.meta.env.VITE_NEWSLETTER_FORM_ACTION as string | undefined) ?? "",
   figmaPortfolio:
     "https://www.figma.com/design/CraaAOcKl1hV3Y2SO0E58o/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B-%D1%80%D0%B0%D0%B1%D0%BE%D1%82--%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE--2024",

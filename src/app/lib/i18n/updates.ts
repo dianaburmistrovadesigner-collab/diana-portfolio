@@ -90,7 +90,7 @@ const pageCopy: Record<
     subscribeSuccess: "Thanks — you're on the list.",
     subscribeError: "Something went wrong. Try again or reach out on LinkedIn.",
     subscribePending:
-      "Subscription form is being wired up. For now, follow Medium or LinkedIn — links are in the footer.",
+      "Newsletter form is being wired up. For now, follow Medium or LinkedIn — links are in the footer.",
   },
   ru: {
     badge: "Обновления · Диана Бурмистрова",
@@ -107,7 +107,7 @@ const pageCopy: Record<
     subscribeSuccess: "Спасибо — вы в списке.",
     subscribeError: "Не получилось. Попробуйте ещё раз или напишите в LinkedIn.",
     subscribePending:
-      "Форма подписки скоро подключится. Пока удобнее следить через Medium или LinkedIn — ссылки в футере.",
+      "Форма подписки скоро подключится через Tally. Пока удобнее следить через Medium или LinkedIn — ссылки в футере.",
   },
 };
 
