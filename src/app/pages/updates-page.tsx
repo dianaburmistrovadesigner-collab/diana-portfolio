@@ -73,13 +73,18 @@ export function UpdatesPage() {
                 {c.entries.map((entry) => (
                   <li
                     key={entry.id}
-                    className="relative grid gap-4 rounded-2xl border border-[#E8E8E3] bg-white p-6 md:grid-cols-[140px_1fr]"
+                    className={
+                      "relative grid gap-4 rounded-2xl border border-[#E8E8E3] bg-white p-6 md:grid-cols-[140px_1fr]" +
+                      (c.entries.length > 1 ? " md:ml-6" : "")
+                    }
                   >
-                    <span
-                      aria-hidden
-                      className="absolute left-6 top-8 hidden h-2.5 w-2.5 rounded-full border-2 border-white md:block"
-                      style={{ background: kindAccent[entry.kind], marginLeft: -1 }}
-                    />
+                    {c.entries.length > 1 && (
+                      <span
+                        aria-hidden
+                        className="absolute -left-[22px] top-8 hidden h-2.5 w-2.5 rounded-full border-2 border-[#FAFAF8] md:block"
+                        style={{ background: kindAccent[entry.kind] }}
+                      />
+                    )}
                     <div>
                       <time
                         dateTime={entry.date}
