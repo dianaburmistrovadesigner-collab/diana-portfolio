@@ -22,7 +22,7 @@ export function TopNav({ active }: { active: Route }) {
             <span className="font-mono text-[11px]">DB</span>
           </span>
           <span className="flex flex-col leading-tight">
-            <span className="text-[13px] text-[#050505]">Diana Burmistrova</span>
+            <span className="text-[13px] text-[#050505]">{t("name")}</span>
             <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#8A8A84]">
               {t("role")}
             </span>

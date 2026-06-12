@@ -7,6 +7,7 @@ const en = {
   "nav.updates": "Updates",
   "nav.cv": "CV",
   "nav.contact": "Get in touch",
+  "name": "Diana Burmistrova",
   "role": "Product Designer",
 
   "project.inProgress": "In progress",
@@ -27,6 +28,7 @@ const ru = {
   "nav.updates": "Обновления",
   "nav.cv": "CV",
   "nav.contact": "Написать мне",
+  "name": "Диана Бурмистрова",
   "role": "Продуктовый дизайнер",
 
   "project.inProgress": "В работе",

@@ -6,7 +6,7 @@ import { siteConfig } from "../lib/site-config";
 const ACCENT = "#0E9488";
 
 export function HomePage() {
-  const { locale, href } = useLocale();
+  const { locale, href, t } = useLocale();
   const c = getHomeContent(locale);
   const projects = getProjects(locale);
 
@@ -21,7 +21,7 @@ export function HomePage() {
           <div className="grid gap-12 md:grid-cols-[1.4fr_1fr] md:items-end">
             <div>
               <h1 className="max-w-[16ch] text-[44px] leading-[1.05] tracking-[-0.02em] text-[#050505] md:text-[80px]">
-                Diana Burmistrova
+                {t("name")}
               </h1>
               <div className="mt-3 font-mono text-[12px] uppercase tracking-[0.18em] text-[#6F6F6A]">
                 {locale === "ru" ? "Продуктовый дизайнер" : "Product Designer"}
