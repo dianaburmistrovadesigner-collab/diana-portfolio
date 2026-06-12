@@ -25,6 +25,7 @@ export type UpdatesContent = {
   subscribeSuccess: string;
   subscribeError: string;
   subscribePending: string;
+  subscribeConsent: string;
   kindLabels: Record<UpdateKind, string>;
   entries: UpdateEntry[];
 };
@@ -91,6 +92,8 @@ const pageCopy: Record<
     subscribeError: "Something went wrong. Try again or reach out on LinkedIn.",
     subscribePending:
       "Newsletter form is being wired up. For now, follow Medium or LinkedIn — links are in the footer.",
+    subscribeConsent:
+      "By subscribing, you agree to receive occasional email updates. You can unsubscribe at any time.",
   },
   ru: {
     badge: "Обновления · Диана Бурмистрова",
@@ -108,6 +111,8 @@ const pageCopy: Record<
     subscribeError: "Не получилось. Попробуйте ещё раз или напишите в LinkedIn.",
     subscribePending:
       "Форма подписки скоро подключится через Tally. Пока удобнее следить через Medium или LinkedIn — ссылки в футере.",
+    subscribeConsent:
+      "Подписываясь, вы соглашаетесь на email-рассылку с новостями. Отписаться можно в любой момент.",
   },
 };
 

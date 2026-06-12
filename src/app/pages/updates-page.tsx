@@ -55,6 +55,7 @@ export function UpdatesPage() {
                   errorMessage={c.subscribeError}
                   pendingMessage={c.subscribePending}
                 />
+                <p className="mt-3 text-[11px] leading-[1.55] text-[#8A8A84]">{c.subscribeConsent}</p>
               </div>
             </div>
 
