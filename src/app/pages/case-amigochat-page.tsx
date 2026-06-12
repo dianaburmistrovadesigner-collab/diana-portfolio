@@ -545,6 +545,7 @@ function MvpScope() {
 /* -------------------------------------------------------------- Design */
 
 function Design() {
+  const { tc } = useLocale();
   const visual = [
     ["Color palette", "Warm peach / beige backgrounds with orange accents"],
     ["Mascot", "A friendly robot in a sombrero — playful and memorable"],
