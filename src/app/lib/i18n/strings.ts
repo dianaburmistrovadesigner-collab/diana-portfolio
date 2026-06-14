@@ -19,6 +19,10 @@ const en = {
   "footer.body":
     "I work on AI, SaaS and dev-platform products — taking complex, technical surfaces and turning them into things teams can actually use.",
   "footer.copy": "© 2026 · Diana Burmistrova · Product Designer",
+
+  "casenav.heading": "More cases",
+  "casenav.prev": "← Previous case",
+  "casenav.next": "Next case →",
 } as const;
 
 const ru = {
@@ -40,6 +44,10 @@ const ru = {
   "footer.body":
     "Работаю с AI-, SaaS- и dev-платформами: беру сложные технические интерфейсы и делаю из них то, чем команды реально пользуются.",
   "footer.copy": "© 2026 · Диана Бурмистрова · Продуктовый дизайнер",
+
+  "casenav.heading": "Другие кейсы",
+  "casenav.prev": "← Предыдущий кейс",
+  "casenav.next": "Следующий кейс →",
 } as const;
 
 export type StringKey = keyof typeof en;

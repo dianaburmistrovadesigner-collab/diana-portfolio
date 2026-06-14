@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { CaseFooter } from "./components/case-footer";
+import { CaseNav } from "./components/case-nav";
 import { TopNav } from "./components/top-nav";
 import { parseHash, type SiteRoute } from "./lib/routing";
 import { AboutPage } from "./pages/about-page";
@@ -47,6 +48,10 @@ export default function App() {
       {route === "case-overchat" && <CaseOverchatPage />}
       {route === "case-strevolut" && <CaseStrevolutPage />}
       {route === "case-template" && <CaseTemplatePage />}
+      {(route === "case-aimlapi" ||
+        route === "case-amigochat" ||
+        route === "case-overchat" ||
+        route === "case-strevolut") && <CaseNav currentRoute={route} />}
       <CaseFooter />
     </div>
   );
