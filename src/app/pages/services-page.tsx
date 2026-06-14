@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import { ServiceCard } from "../components/service-card";
 import { services } from "../data/services";
 import { useLocale } from "../lib/locale";
@@ -117,96 +117,24 @@ function WorkingDetail({ label, value }: { label: string; value: string }) {
   );
 }
 
+const TALLY_FORM_ID = "pbZ058";
+
 function PricingForm() {
   const { locale } = useLocale();
-  const [sent, setSent] = useState(false);
-  const [form, setForm] = useState({
-    name: "",
-    company: "",
-    email: "",
-    service: "",
-    budget: "",
-    timeline: "",
-    description: "",
-  });
 
-  const serviceOptions =
-    locale === "ru"
-      ? [
-          { value: "", label: "Выберите услугу" },
-          { value: "b2b-product-design", label: "Product Design for B2B SaaS" },
-          { value: "design-system", label: "Design System — с нуля или аудит" },
-          { value: "usability-audit", label: "Usability Audit" },
-          { value: "design-system-audit", label: "Design System Audit" },
-          { value: "other", label: "Другое / не уверена" },
-        ]
-      : [
-          { value: "", label: "Select a service" },
-          { value: "b2b-product-design", label: "Product Design for B2B SaaS" },
-          { value: "design-system", label: "Design System — build or audit" },
-          { value: "usability-audit", label: "Usability Audit" },
-          { value: "design-system-audit", label: "Design System Audit" },
-          { value: "other", label: "Other / not sure yet" },
-        ];
-
-  const budgetOptions =
-    locale === "ru"
-      ? [
-          { value: "", label: "Примерный бюджет" },
-          { value: "<2k", label: "до $2 000" },
-          { value: "2-5k", label: "$2 000 – $5 000" },
-          { value: "5-10k", label: "$5 000 – $10 000" },
-          { value: "10k+", label: "$10 000+" },
-          { value: "flexible", label: "Обсуждаемо" },
-        ]
-      : [
-          { value: "", label: "Approximate budget" },
-          { value: "<2k", label: "Under $2,000" },
-          { value: "2-5k", label: "$2,000 – $5,000" },
-          { value: "5-10k", label: "$5,000 – $10,000" },
-          { value: "10k+", label: "$10,000+" },
-          { value: "flexible", label: "Flexible / let's discuss" },
-        ];
-
-  const timelineOptions =
-    locale === "ru"
-      ? [
-          { value: "", label: "Желаемые сроки" },
-          { value: "asap", label: "ASAP" },
-          { value: "1month", label: "В течение месяца" },
-          { value: "1-3months", label: "1–3 месяца" },
-          { value: "flexible", label: "Гибко" },
-        ]
-      : [
-          { value: "", label: "Preferred timeline" },
-          { value: "asap", label: "ASAP" },
-          { value: "1month", label: "Within a month" },
-          { value: "1-3months", label: "1–3 months out" },
-          { value: "flexible", label: "Flexible" },
-        ];
-
-  function handleChange(
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) {
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  }
-
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    const subject = encodeURIComponent(
-      `[Portfolio] Inquiry — ${form.service || "Service request"}`
-    );
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nCompany: ${form.company}\nEmail: ${form.email}\n\nService: ${form.service}\nBudget: ${form.budget}\nTimeline: ${form.timeline}\n\nBrief:\n${form.description}`
-    );
-    window.location.href = `mailto:diana.burmistrova@gmail.com?subject=${subject}&body=${body}`;
-    setSent(true);
-  }
+  useEffect(() => {
+    // Load Tally embed script if not already present
+    if (document.querySelector('script[src="https://tally.so/widgets/embed.js"]')) return;
+    const script = document.createElement("script");
+    script.src = "https://tally.so/widgets/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
 
   return (
-    <section className="border-b border-[#E8E8E3] bg-[#FAFAF8]">
+    <section id="pricing" className="border-b border-[#E8E8E3] bg-[#FAFAF8]">
       <div className="mx-auto max-w-[1320px] px-6 py-16 md:py-20">
-        <div className="grid gap-12 md:grid-cols-[1fr_560px]">
+        <div className="grid gap-12 md:grid-cols-[1fr_600px]">
           <div>
             <div className="mb-4 flex items-center gap-3">
               <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#8A8A84]">
@@ -219,127 +147,26 @@ function PricingForm() {
             </h2>
             <p className="max-w-[380px] text-[14px] leading-relaxed text-[#6F6F6A]">
               {locale === "ru"
-                ? "Заполните короткий бриф — отвечу в течение 24 часов с ориентировочной стоимостью и форматом сотрудничества."
+                ? "Заполните короткий бриф — отвечу в течение 24 часов с ориентировочной стоимостью и форматом."
                 : "Fill in a short brief — I'll reply within 24 hours with an estimate and a proposed engagement format."}
             </p>
             <div className="mt-8 flex flex-col gap-3">
-              <InfoRow
-                label={locale === "ru" ? "Контракт" : "Contract"}
-                value="Mellow · B2B"
-              />
-              <InfoRow
-                label={locale === "ru" ? "Работаю с" : "Working with"}
-                value={locale === "ru" ? "EN / RU клиентами" : "EN / RU clients"}
-              />
-              <InfoRow
-                label={locale === "ru" ? "Формат" : "Format"}
-                value={locale === "ru" ? "Remote, async" : "Remote, async"}
-              />
+              <InfoRow label="Contract" value="Mellow · B2B" />
+              <InfoRow label="Languages" value="EN / RU" />
+              <InfoRow label="Format" value="Remote · async-first" />
+              <InfoRow label="Response" value="Within 24 hours" />
             </div>
           </div>
 
-          <div>
-            {sent ? (
-              <div className="flex h-full min-h-[300px] flex-col items-center justify-center rounded-2xl border border-[#E8E8E3] bg-white p-10 text-center">
-                <div className="mb-4 text-[32px]">✉️</div>
-                <p className="text-[16px] text-[#050505]">
-                  {locale === "ru"
-                    ? "Открываю ваш почтовый клиент…"
-                    : "Opening your email client…"}
-                </p>
-                <p className="mt-2 text-[13px] text-[#8A8A84]">
-                  {locale === "ru"
-                    ? "Если ничего не открылось — напишите напрямую на diana.burmistrova@gmail.com"
-                    : "If nothing opened — reach out directly at diana.burmistrova@gmail.com"}
-                </p>
-              </div>
-            ) : (
-              <form
-                onSubmit={handleSubmit}
-                className="flex flex-col gap-4 rounded-2xl border border-[#E8E8E3] bg-white p-6 md:p-8"
-              >
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <FormField
-                    label={locale === "ru" ? "Ваше имя *" : "Your name *"}
-                    name="name"
-                    type="text"
-                    value={form.name}
-                    onChange={handleChange}
-                    required
-                    placeholder={locale === "ru" ? "Имя Фамилия" : "First Last"}
-                  />
-                  <FormField
-                    label={locale === "ru" ? "Компания" : "Company"}
-                    name="company"
-                    type="text"
-                    value={form.company}
-                    onChange={handleChange}
-                    placeholder={locale === "ru" ? "Название компании" : "Company name"}
-                  />
-                </div>
-                <FormField
-                  label={locale === "ru" ? "Email для ответа *" : "Your email *"}
-                  name="email"
-                  type="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  required
-                  placeholder="name@company.com"
-                />
-                <FormSelect
-                  label={locale === "ru" ? "Услуга *" : "Service *"}
-                  name="service"
-                  value={form.service}
-                  onChange={handleChange}
-                  options={serviceOptions}
-                  required
-                />
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <FormSelect
-                    label={locale === "ru" ? "Бюджет" : "Budget"}
-                    name="budget"
-                    value={form.budget}
-                    onChange={handleChange}
-                    options={budgetOptions}
-                  />
-                  <FormSelect
-                    label={locale === "ru" ? "Сроки" : "Timeline"}
-                    name="timeline"
-                    value={form.timeline}
-                    onChange={handleChange}
-                    options={timelineOptions}
-                  />
-                </div>
-                <FormTextarea
-                  label={
-                    locale === "ru"
-                      ? "Коротко о проекте *"
-                      : "Brief description of your project *"
-                  }
-                  name="description"
-                  value={form.description}
-                  onChange={handleChange}
-                  required
-                  placeholder={
-                    locale === "ru"
-                      ? "Что за продукт, какая задача, какой стек (если важно)…"
-                      : "What's the product, what's the goal, tech stack if relevant…"
-                  }
-                  rows={4}
-                />
-                <button
-                  type="submit"
-                  className="mt-2 w-full rounded-full bg-[#0a0a0a] py-3 text-[14px] text-white transition-colors hover:bg-[#1f1f1f]"
-                >
-                  {locale === "ru" ? "Отправить запрос →" : "Send request →"}
-                </button>
-                <p className="text-center font-mono text-[10px] uppercase tracking-[0.14em] text-[#8A8A84]">
-                  {locale === "ru"
-                    ? "Открываю почтовый клиент · без посредников"
-                    : "Opens your mail client · no third-party forms"}
-                </p>
-              </form>
-            )}
+          <div className="overflow-hidden rounded-2xl border border-[#E8E8E3] bg-white">
+            <iframe
+              data-tally-src={`https://tally.so/embed/${TALLY_FORM_ID}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1`}
+              loading="lazy"
+              width="100%"
+              height="600"
+              title="New Project Brief"
+              className="block"
+            />
           </div>
         </div>
       </div>
@@ -355,113 +182,6 @@ function InfoRow({ label, value }: { label: string; value: string }) {
       </span>
       <span className="h-px flex-1 bg-[#E8E8E3]" />
       <span className="text-[13px] text-[#3a3a36]">{value}</span>
-    </div>
-  );
-}
-
-function FormField({
-  label,
-  name,
-  type,
-  value,
-  onChange,
-  placeholder,
-  required,
-}: {
-  label: string;
-  name: string;
-  type: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  placeholder?: string;
-  required?: boolean;
-}) {
-  return (
-    <div className="flex flex-col gap-1.5">
-      <label className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#8A8A84]">
-        {label}
-      </label>
-      <input
-        type={type}
-        name={name}
-        value={value}
-        onChange={onChange}
-        placeholder={placeholder}
-        required={required}
-        className="rounded-xl border border-[#E8E8E3] bg-[#FAFAF8] px-4 py-2.5 text-[13px] text-[#050505] outline-none transition-colors placeholder:text-[#BFBFB8] focus:border-[#050505]"
-      />
-    </div>
-  );
-}
-
-function FormSelect({
-  label,
-  name,
-  value,
-  onChange,
-  options,
-  required,
-}: {
-  label: string;
-  name: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-  options: { value: string; label: string }[];
-  required?: boolean;
-}) {
-  return (
-    <div className="flex flex-col gap-1.5">
-      <label className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#8A8A84]">
-        {label}
-      </label>
-      <select
-        name={name}
-        value={value}
-        onChange={onChange}
-        required={required}
-        className="rounded-xl border border-[#E8E8E3] bg-[#FAFAF8] px-4 py-2.5 text-[13px] text-[#050505] outline-none transition-colors focus:border-[#050505]"
-      >
-        {options.map((o) => (
-          <option key={o.value} value={o.value}>
-            {o.label}
-          </option>
-        ))}
-      </select>
-    </div>
-  );
-}
-
-function FormTextarea({
-  label,
-  name,
-  value,
-  onChange,
-  placeholder,
-  required,
-  rows,
-}: {
-  label: string;
-  name: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
-  placeholder?: string;
-  required?: boolean;
-  rows?: number;
-}) {
-  return (
-    <div className="flex flex-col gap-1.5">
-      <label className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#8A8A84]">
-        {label}
-      </label>
-      <textarea
-        name={name}
-        value={value}
-        onChange={onChange}
-        placeholder={placeholder}
-        required={required}
-        rows={rows ?? 4}
-        className="resize-none rounded-xl border border-[#E8E8E3] bg-[#FAFAF8] px-4 py-2.5 text-[13px] text-[#050505] outline-none transition-colors placeholder:text-[#BFBFB8] focus:border-[#050505]"
-      />
     </div>
   );
 }
