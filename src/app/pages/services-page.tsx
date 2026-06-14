@@ -158,7 +158,7 @@ function PricingForm() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-[#E8E8E3] bg-white">
+          <div className="overflow-hidden rounded-2xl border border-[#E8E8E3] bg-white px-6 pb-2 pt-6">
             <iframe
               data-tally-src={`https://tally.so/embed/${TALLY_FORM_ID}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1`}
               loading="lazy"
