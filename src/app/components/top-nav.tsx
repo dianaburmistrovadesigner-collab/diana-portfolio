@@ -2,7 +2,7 @@ import { useLocale } from "../lib/locale";
 import { siteConfig } from "../lib/site-config";
 import { LanguageSwitcher } from "./language-switcher";
 
-type Route = "home" | "work" | "about" | "updates" | "case-aimlapi";
+type Route = "home" | "work" | "services" | "about" | "updates" | "case-aimlapi";
 
 export function TopNav({ active }: { active: Route }) {
   const { t, href } = useLocale();
@@ -10,6 +10,7 @@ export function TopNav({ active }: { active: Route }) {
   const links: { label: string; route: Route; href: string }[] = [
     { label: t("nav.home"), route: "home", href: href("#/") },
     { label: t("nav.cases"), route: "work", href: href("#/work") },
+    { label: t("nav.services"), route: "services", href: href("#/services") },
     { label: t("nav.about"), route: "about", href: href("#/about") },
     { label: t("nav.updates"), route: "updates", href: href("#/updates") },
   ];

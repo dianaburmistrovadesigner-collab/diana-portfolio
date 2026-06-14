@@ -3,6 +3,7 @@ import type { SiteLocale } from "../locale-types";
 const en = {
   "nav.home": "Home",
   "nav.cases": "Cases",
+  "nav.services": "Services",
   "nav.about": "About",
   "nav.updates": "Updates",
   "nav.cv": "CV",
@@ -28,6 +29,7 @@ const en = {
 const ru = {
   "nav.home": "Главная",
   "nav.cases": "Кейсы",
+  "nav.services": "Услуги",
   "nav.about": "Обо мне",
   "nav.updates": "Обновления",
   "nav.cv": "CV",

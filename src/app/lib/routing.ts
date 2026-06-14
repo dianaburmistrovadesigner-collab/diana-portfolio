@@ -5,6 +5,11 @@ export type SiteRoute =
   | "work"
   | "about"
   | "updates"
+  | "services"
+  | "service-b2b-product-design"
+  | "service-design-system"
+  | "service-usability-audit"
+  | "service-design-system-audit"
   | "case-aimlapi"
   | "case-amigochat"
   | "case-overchat"
@@ -16,6 +21,11 @@ const ROUTE_PATH: Record<SiteRoute, string> = {
   work: "work",
   about: "about",
   updates: "updates",
+  services: "services",
+  "service-b2b-product-design": "services/b2b-product-design",
+  "service-design-system": "services/design-system",
+  "service-usability-audit": "services/usability-audit",
+  "service-design-system-audit": "services/design-system-audit",
   "case-aimlapi": "case/aimlapi",
   "case-amigochat": "case/amigochat",
   "case-overchat": "case/overchat",
