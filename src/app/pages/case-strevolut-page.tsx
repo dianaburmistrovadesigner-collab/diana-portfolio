@@ -754,6 +754,7 @@ function Outcomes() {
   const results = [
     ["60+", "Component sets published with full variant coverage and dark-mode support"],
     ["75", "Documentation frames — visual specs ready for portfolio and handoff"],
+    ["WCAG AA", "All colour tokens verified against WCAG 2.1 AA contrast ratios in both light and dark mode — keyboard navigation accounted for in interactive component specs"],
     ["—", "Ready for the next case — reusable cards, tables, and inputs"],
     ["1", "Single semantic source of truth — prevents “which blue?” conversations"],
   ];

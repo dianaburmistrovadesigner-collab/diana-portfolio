@@ -55,7 +55,7 @@ const content: Record<SiteLocale, AboutContent> = {
     intro1:
       "Product Designer with 9+ years of experience designing complex, user-centered digital products across web, mobile, and enterprise platforms. I specialize in translating ambiguous business problems into intuitive, scalable design solutions through rigorous user research, information architecture, and systems thinking.",
     intro2:
-      "Experienced in 0-to-1 MVP delivery, design systems, and cross-functional collaboration with engineering and product teams. Seeking a full-time or freelance Product Designer role at an international, remote-first company.",
+      "Experienced in 0-to-1 MVP delivery, design systems, and cross-functional collaboration with engineering and product teams. Open to full-time remote roles or long-term B2B contracts (available via Mellow — no Deel required on your end).",
     downloadCv: "Download CV (PDF)",
     contact: "LinkedIn",
     portrait: "Portrait placeholder",
@@ -63,7 +63,7 @@ const content: Record<SiteLocale, AboutContent> = {
       ["Experience", "9+ years"],
       ["Languages", "RU · EN"],
       ["Mode", "Remote-first"],
-      ["Open to", "Full-time · freelance"],
+      ["Open to", "Full-time · long-term B2B"],
     ],
     quotes: [
       {
@@ -205,7 +205,7 @@ const content: Record<SiteLocale, AboutContent> = {
     intro1:
       "Продуктовый дизайнер с 9+ годами опыта — веб, мобайл и enterprise. Беру нечёткие бизнес-задачи и превращаю их в понятные продуктовые решения через исследования, информационную архитектуру и системное мышление.",
     intro2:
-      "Запускала MVP с нуля, строила дизайн-системы, работала с продуктовыми и инженерными командами. Ищу full-time или фриланс в международной удалённой компании.",
+      "Запускала MVP с нуля, строила дизайн-системы, работала с продуктовыми и инженерными командами. Открыта к full-time remote или долгосрочному B2B-контракту (работаю через Mellow — Deel на вашей стороне не нужен).",
     downloadCv: "Скачать CV (PDF)",
     contact: "LinkedIn",
     portrait: "Фото — скоро",
@@ -213,7 +213,7 @@ const content: Record<SiteLocale, AboutContent> = {
       ["Опыт", "9+ лет"],
       ["Языки", "RU · EN"],
       ["Формат", "Удалённо"],
-      ["Открыта к", "Full-time · фриланс"],
+      ["Открыта к", "Full-time · B2B-контракт"],
     ],
     quotes: [
       { text: "Тот, кто знает зачем, вынесет любое как.", author: "Виктор Франкл" },
