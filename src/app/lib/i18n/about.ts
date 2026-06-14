@@ -131,7 +131,7 @@ const content: Record<SiteLocale, AboutContent> = {
       { group: "Product team", items: ["Cross-functional work", "Hand-off & design QA", "Async work & documentation", "Stakeholder alignment"] },
     ],
     toolsLabel: "Tools",
-    tools: ["Figma", "Figma Make", "Figma Variables", "Tokens Studio", "Axure RP", "Notion", "Miro", "Hotjar", "React (basics)", "Tailwind (basics)"],
+    tools: ["Figma", "Figma Make", "Figma Variables", "Tokens Studio", "Notion", "Miro", "Hotjar", "React (basics)", "Tailwind (basics)"],
     experienceLabel: "Experience",
     experienceHeading: "Roles & places",
     experience: [
@@ -183,8 +183,8 @@ const content: Record<SiteLocale, AboutContent> = {
     profDevLabel: "Professional development",
     profDevHeading: "Courses & continued learning",
     courses: [
-      { year: "2026", course: "Design Tokens Mastery — Romina Kavčič · The Design System Guide (in progress)" },
-      { year: "2025 — 2026", course: "Product Design (UX/UI) Program — DesignerUp (in progress)" },
+      { year: "2026", course: "Design Tokens Mastery — Romina Kavčič · The Design System Guide (Feb 2026, in progress)" },
+      { year: "2026", course: "Product Design (UX/UI) Program — DesignerUp (Feb 2026, in progress)" },
       { year: "2022", course: "UX/UI Designer Profession — Uprock school" },
       { year: "2019", course: "Grids & Website Design — Bang Bang Education" },
       { year: "2018", course: "Workshop — Design Line" },
@@ -194,7 +194,7 @@ const content: Record<SiteLocale, AboutContent> = {
     languagesLabel: "Languages",
     languages: [
       { name: "Russian", level: "Native" },
-      { name: "English", level: "Working" },
+      { name: "English", level: "B1–B2 (Upper-Intermediate)" },
     ],
     socialHeading: "Profiles & writing",
     socialBody: "Selected work and longer-form notes on the platforms below — if you want to follow along beyond this site.",
@@ -278,7 +278,7 @@ const content: Record<SiteLocale, AboutContent> = {
       { group: "Продуктовая команда", items: ["Кросс-функциональная работа", "Хэндофф и Design QA", "Асинхрон и документация", "Согласование со стейкхолдерами"] },
     ],
     toolsLabel: "Инструменты",
-    tools: ["Figma", "Figma Make", "Figma Variables", "Tokens Studio", "Axure RP", "Notion", "Miro", "Hotjar", "React (базово)", "Tailwind (базово)"],
+    tools: ["Figma", "Figma Make", "Figma Variables", "Tokens Studio", "Notion", "Miro", "Hotjar", "React (базово)", "Tailwind (базово)"],
     experienceLabel: "Опыт",
     experienceHeading: "Роли и места",
     experience: [
@@ -330,8 +330,8 @@ const content: Record<SiteLocale, AboutContent> = {
     profDevLabel: "Профессиональное развитие",
     profDevHeading: "Курсы и обучение",
     courses: [
-      { year: "2026", course: "Design Tokens Mastery — Romina Kavčič · The Design System Guide (в процессе)" },
-      { year: "2025 — 2026", course: "Product Design (UX/UI) — DesignerUp (в процессе)" },
+      { year: "2026", course: "Design Tokens Mastery — Romina Kavčič · The Design System Guide (февраль 2026, в процессе)" },
+      { year: "2026", course: "Product Design (UX/UI) — DesignerUp (февраль 2026, в процессе)" },
       { year: "2022", course: "Профессия UX/UI-дизайнер — Uprock" },
       { year: "2019", course: "Сетки и проектирование сайтов — Bang Bang Education" },
       { year: "2018", course: "Workshop — Design Line" },
@@ -341,7 +341,7 @@ const content: Record<SiteLocale, AboutContent> = {
     languagesLabel: "Языки",
     languages: [
       { name: "Русский", level: "Родной" },
-      { name: "Английский", level: "Рабочий" },
+      { name: "Английский", level: "B1–B2 (Upper-Intermediate)" },
     ],
     socialHeading: "Профили и публикации",
     socialBody: "Работы и тексты о процессе — на площадках ниже, если хотите следить за проектами не только здесь.",
