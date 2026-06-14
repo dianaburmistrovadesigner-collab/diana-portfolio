@@ -32,10 +32,8 @@ export function CaseNav({ currentRoute }: { currentRoute: SiteRoute }) {
   const idx = caseProjects.findIndex((p) => p.slug === currentSlug);
   if (idx === -1) return null;
 
-  const prev = idx > 0 ? caseProjects[idx - 1] : null;
-  const next = idx < caseProjects.length - 1 ? caseProjects[idx + 1] : null;
-
-  if (!prev && !next) return null;
+  const prev = caseProjects[(idx - 1 + caseProjects.length) % caseProjects.length];
+  const next = caseProjects[(idx + 1) % caseProjects.length];
 
   return (
     <section className="border-b border-[#E8E8E3] bg-[#FAFAF8]">
@@ -47,14 +45,8 @@ export function CaseNav({ currentRoute }: { currentRoute: SiteRoute }) {
           <span className="h-px flex-1 bg-[#E8E8E3]" />
         </div>
         <div className="grid gap-4 md:grid-cols-2">
-          {prev ? (
-            <NavCard project={prev} direction="prev" href={buildHash(locale, ROUTE_BY_SLUG[prev.slug])} label={t("casenav.prev")} />
-          ) : (
-            <div />
-          )}
-          {next ? (
-            <NavCard project={next} direction="next" href={buildHash(locale, ROUTE_BY_SLUG[next.slug])} label={t("casenav.next")} />
-          ) : null}
+          <NavCard project={prev} direction="prev" href={buildHash(locale, ROUTE_BY_SLUG[prev.slug])} label={t("casenav.prev")} />
+          <NavCard project={next} direction="next" href={buildHash(locale, ROUTE_BY_SLUG[next.slug])} label={t("casenav.next")} />
         </div>
       </div>
     </section>
@@ -77,10 +69,7 @@ function NavCard({
   return (
     <a
       href={href}
-      className={
-        "group flex flex-col overflow-hidden rounded-2xl border border-[#E8E8E3] bg-white transition-colors hover:border-[#cfcfc8] " +
-        (direction === "next" ? "md:col-start-2" : "")
-      }
+      className="group flex flex-col overflow-hidden rounded-2xl border border-[#E8E8E3] bg-white transition-colors hover:border-[#cfcfc8]"
     >
       <div className="relative h-[180px] overflow-hidden border-b border-[#E8E8E3] bg-[#FAFAF8]">
         {cover && (
