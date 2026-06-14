@@ -8,7 +8,7 @@ export const siteConfig = {
   email: "diana.burmistrova.designer@gmail.com",
   cvPath: "/Diana_Burmistrova_Resume.pdf",
   telegram: "https://t.me/artpyatnica",
-  linkedin: "https://www.linkedin.com/in/diana-burmistrova-41710a90/",
+  linkedin: "https://www.linkedin.com/in/diana-burmistrova/",
   contra: "https://contra.com/diana_k4gv16h8/about",
   layers: "https://layers.to/dianaburm",
   mediumRu:
