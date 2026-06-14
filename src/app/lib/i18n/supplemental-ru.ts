@@ -75,6 +75,8 @@ export const supplementalRu: Record<string, string> = {
   "Visit amigochat.io →": "Открыть amigochat.io →",
   // Strevolut
   "Design system case · Strevolut · 2025–2026 · ongoing": "Кейс дизайн-системы · Strevolut · 2025–2026 · в работе",
+  "Work in progress — this case study is being actively updated. Some sections (component and style galleries, visual examples) are still incomplete.":
+    "Проект в работе — кейс активно дополняется. Некоторые разделы (галереи компонентов и стилей, визуальные примеры) пока не заполнены.",
   "One system instead of rebuilding UI from scratch every time.": "Одна система вместо сборки UI с нуля каждый раз.",
   "Semantic tokens, shadcn / Tailwind alignment, and 75 documentation frames. The AI/ML API redesign came first — without one — and that's what made building Strevolut the obvious next step.":
     "Семантические токены, выравнивание под shadcn/Tailwind и 75 документационных фреймов. Сначала был редизайн AI/ML API — без системы — и это сделало Strevolut логичным следующим шагом.",

@@ -23,7 +23,7 @@ const copy: Record<SiteLocale, Record<string, ProjectCopy>> = {
     strevolut: {
       title: "Strevolut · A design system to unify portfolio work",
       summary:
-        "Semantic tokens, shadcn-aligned components, 75 doc frames — started after the AI/ML API redesign showed why I needed one.",
+        "Semantic tokens, shadcn-aligned components, 75 doc frames — personal system in active development.",
       role: "Product Designer · Design systems",
       tags: ["Design system", "Tokens", "shadcn", "Figma Variables"],
     },
@@ -53,7 +53,7 @@ const copy: Record<SiteLocale, Record<string, ProjectCopy>> = {
     strevolut: {
       title: "Strevolut · Дизайн-система для портфолио и продуктов",
       summary:
-        "Семантические токены, компоненты под shadcn, 75 док-фреймов — родилась после редизайна AI/ML API, когда стало ясно, что без системы не обойтись.",
+        "Семантические токены, компоненты под shadcn, 75 док-фреймов — личный проект, в активной разработке.",
       role: "Product Designer · Design systems",
       tags: ["Дизайн-система", "Токены", "shadcn", "Figma Variables"],
     },

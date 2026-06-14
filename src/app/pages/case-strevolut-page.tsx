@@ -101,6 +101,14 @@ function Hero() {
           ))}
         </div>
 
+        <div className="mt-6 rounded-2xl border border-[#C5E8E4] bg-[#F0FAF8] px-5 py-4">
+          <p className="text-[14px] leading-[1.55] text-[#3a3a36]">
+            {tc(
+              "Work in progress — this case study is being actively updated. Some sections (component and style galleries, visual examples) are still incomplete.",
+            )}
+          </p>
+        </div>
+
         <div className="mt-6 flex flex-wrap gap-3">
           <a
             href={strevolutFigmaLinks.uiKit}

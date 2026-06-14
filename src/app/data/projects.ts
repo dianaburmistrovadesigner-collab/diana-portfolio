@@ -19,7 +19,7 @@ export const projects: Project[] = [
     state: "in-progress",
     title: "Strevolut · A design system to unify portfolio work",
     summary:
-      "Semantic tokens, shadcn-aligned components, 75 doc frames — started after the AI/ML API redesign showed why I needed one.",
+      "Semantic tokens, shadcn-aligned components, 75 doc frames — personal system in active development.",
     role: "Product Designer · Design systems",
     tags: ["Design system", "Tokens", "shadcn", "Figma Variables"],
     status: "case",
