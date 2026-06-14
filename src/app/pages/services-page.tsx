@@ -13,41 +13,49 @@ export function ServicesPage() {
   );
 }
 
+const ACCENT = "#0E9488";
+
 function ServicesHero() {
   const { locale } = useLocale();
 
   return (
-    <section className="border-b border-[#E8E8E3]">
-      <div className="mx-auto max-w-[1320px] px-6 py-16 md:py-24">
-        <div className="mb-4 flex items-center gap-3">
-          <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#8A8A84]">
-            Services
-          </span>
-          <span className="h-px flex-1 bg-[#E8E8E3]" />
+    <section className="border-b border-[#E8E8E3] bg-white">
+      <div className="mx-auto max-w-[1320px] px-6 pb-16 pt-16 md:pb-20 md:pt-24">
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#E8E8E3] bg-[#FAFAF8] px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-[#6F6F6A]">
+          <span className="h-1.5 w-1.5 rounded-full" style={{ background: ACCENT }} />
+          {locale === "ru" ? "Услуги" : "Services"}
         </div>
+        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr] md:items-end">
+          <h1 className="max-w-[16ch] text-[40px] leading-[1.05] tracking-[-0.02em] text-[#050505] md:text-[64px]">
+            {locale === "ru"
+              ? "Продуктовый дизайн и UX"
+              : "Product design & UX services"}
+          </h1>
+          <p className="max-w-[42ch] text-[15px] leading-[1.6] text-[#6F6F6A] md:text-[17px]">
+            {locale === "ru"
+              ? "От первого исследования до handoff — для SaaS, AI-инструментов, мобильных и веб-продуктов."
+              : "From first research session to developer handoff — for SaaS, AI tools, mobile and web products."}
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
 
-        <div className="grid gap-12 md:grid-cols-[1fr_400px]">
+function ServicesGrid() {
+  const { locale } = useLocale();
+
+  return (
+    <section className="border-b border-[#E8E8E3] bg-[#FAFAF8]">
+      <div className="mx-auto max-w-[1320px] px-6 py-16 md:py-20">
+        <div className="mb-10 grid gap-10 md:grid-cols-2 md:gap-16">
           <div>
-            <h1 className="mb-6 text-[38px] font-normal leading-tight tracking-[-0.01em] text-[#050505] md:text-[52px]">
-              {locale === "ru"
-                ? "Дизайн-услуги для B2B-продуктов"
-                : "Design services for B2B products"}
-            </h1>
-            <p className="max-w-[560px] text-[15px] leading-relaxed text-[#6F6F6A]">
-              {locale === "ru"
-                ? "Помогаю продуктовым командам проектировать сложные B2B-интерфейсы — от первого исследования до handoff. Специализация: дашборды, AI-инструменты, дизайн-системы, аудит UX."
-                : "I help product teams design complex B2B interfaces — from first research session to handoff. Specialties: dashboards, AI tools, design systems, UX audits."}
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-4 rounded-2xl border border-[#E8E8E3] bg-[#FAFAF8] p-6">
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#8A8A84]">
+            <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#8A8A84]">
               {locale === "ru" ? "Как я работаю" : "How I work"}
-            </p>
-            <div className="flex flex-col gap-3">
+            </div>
+            <div className="mt-4 flex flex-col gap-3">
               <WorkingDetail
-                icon="💳"
-                label={locale === "ru" ? "Контракт" : "Contracts"}
+                label={locale === "ru" ? "Контракт" : "Contract"}
                 value={
                   locale === "ru"
                     ? "B2B через Mellow — без Deel на вашей стороне"
@@ -55,7 +63,6 @@ function ServicesHero() {
                 }
               />
               <WorkingDetail
-                icon="🌐"
                 label={locale === "ru" ? "Языки" : "Languages"}
                 value={
                   locale === "ru"
@@ -64,16 +71,14 @@ function ServicesHero() {
                 }
               />
               <WorkingDetail
-                icon="🕐"
                 label={locale === "ru" ? "Формат" : "Format"}
                 value={
                   locale === "ru"
-                    ? "Удалённо, async-first. UTC+3 (±2 гибко)"
+                    ? "Remote, async-first. UTC+3 (±2 гибко)"
                     : "Remote, async-first. UTC+3 (±2 flexible)"
                 }
               />
               <WorkingDetail
-                icon="📅"
                 label={locale === "ru" ? "Ответ" : "Response time"}
                 value={
                   locale === "ru"
@@ -84,40 +89,8 @@ function ServicesHero() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  );
-}
 
-function WorkingDetail({
-  icon,
-  label,
-  value,
-}: {
-  icon: string;
-  label: string;
-  value: string;
-}) {
-  return (
-    <div className="flex gap-3">
-      <span className="mt-0.5 text-[15px]">{icon}</span>
-      <div>
-        <span className="block font-mono text-[10px] uppercase tracking-[0.14em] text-[#8A8A84]">
-          {label}
-        </span>
-        <span className="text-[13px] leading-snug text-[#3a3a36]">{value}</span>
-      </div>
-    </div>
-  );
-}
-
-function ServicesGrid() {
-  const { locale } = useLocale();
-
-  return (
-    <section className="border-b border-[#E8E8E3]">
-      <div className="mx-auto max-w-[1320px] px-6 py-16">
-        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="flex flex-col gap-4">
           {services.map((s) => (
             <ServiceCard key={s.slug} service={s} />
           ))}
@@ -129,6 +102,18 @@ function ServicesGrid() {
         </p>
       </div>
     </section>
+  );
+}
+
+function WorkingDetail({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex items-baseline gap-3">
+      <span className="flex-shrink-0 font-mono text-[10px] uppercase tracking-[0.14em] text-[#8A8A84]">
+        {label}
+      </span>
+      <span className="h-px flex-1 bg-[#E8E8E3]" />
+      <span className="text-right text-[13px] text-[#3a3a36]">{value}</span>
+    </div>
   );
 }
 

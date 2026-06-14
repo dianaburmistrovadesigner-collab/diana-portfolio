@@ -10,8 +10,8 @@ export function TopNav({ active }: { active: Route }) {
   const links: { label: string; route: Route; href: string }[] = [
     { label: t("nav.home"), route: "home", href: href("#/") },
     { label: t("nav.cases"), route: "work", href: href("#/work") },
-    { label: t("nav.services"), route: "services", href: href("#/services") },
     { label: t("nav.about"), route: "about", href: href("#/about") },
+    { label: t("nav.services"), route: "services", href: href("#/services") },
     { label: t("nav.updates"), route: "updates", href: href("#/updates") },
   ];
 

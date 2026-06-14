@@ -25,12 +25,13 @@ export const services: Service[] = [
   {
     slug: "b2b-product-design",
     route: "service-b2b-product-design",
+    // TODO: regenerate cover — current image says "B2B SaaS", should reflect SaaS & Apps (both B2B and B2C)
     cover: "/images/covers/service-b2b-product-design.png",
-    title: "Product Design for B2B SaaS",
-    tagline: "End-to-end product design for complex B2B tools — from discovery to developer handoff.",
+    title: "Product Design for SaaS & Apps",
+    tagline: "End-to-end product design for complex digital products — from discovery to developer handoff.",
     description: [
-      "I design complex B2B products — developer platforms, SaaS dashboards, AI tools, fintech — from the first research session to the final handoff spec.",
-      "Best fit: multi-step workflows, data-heavy interfaces, dual-audience platforms (devs + business users, admin + end user), 0-to-1 MVPs and feature expansions.",
+      "I design complex digital products — SaaS dashboards, developer platforms, AI tools, consumer apps — from the first research session to the final handoff spec.",
+      "Best fit: multi-step workflows, data-heavy interfaces, dual-audience platforms, 0-to-1 MVPs and feature expansions.",
     ],
     whatIsIncluded: [
       "User research & competitive analysis",
